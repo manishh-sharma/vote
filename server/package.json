@@ -14,7 +14,8 @@
 	},
 	"scripts": {
 		"start": "nodemon index.js",
-		"seed": "node seed.js"
+		"seed": "node seed.js",
+		"dev" : "concurrently \"npm start\" \"npm run client\""
 	},
 	"devDependencies": {
 		"nodemon": "^1.19.4"
