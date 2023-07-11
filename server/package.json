@@ -13,7 +13,10 @@
 		"mongoose": "^5.0.15"
 	},
 	"scripts": {
-		"start": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"server": "nodemon index.js",
+		"client": "npm start --prefix ./client",
 		"seed": "node seed.js",
 		"dev" : "concurrently \"npm start\" \"npm run client\""
 	},
